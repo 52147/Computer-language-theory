@@ -1,5 +1,12 @@
 # Computer-language-theory
 
+## Proof Techniques
+1. proof by induction:
+  - 1. base
+  - 2. assumption(inductive assumption)
+  - 3. proof 
+2. proof by contradiction
+
 ## Sets
 - A set is a collection of elements, without any structure other than membership. 
 - To indicate that x is an element of the set S, we write x ∈ S. 
