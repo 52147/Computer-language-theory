@@ -18,7 +18,7 @@ integers 0, 1, 2 is shown as
 ### The usual set operations
 1. union (∪): S1 ∪ S2 = {x: x ∈ S1 or x ∈ S2}
 2. intersection (∩): S1 ∩ S2 = {x: x ∈ S1 and x ∈ S2} 
-3. and difference (−): S1 − S2 = {x: x ∈ S1 and x ∉ S2}
+3. difference (−): S1 − S2 = {x: x ∈ S1 and x ∉ S2}
 4. complementation: 
    - The complement of a set S, denoted by consists of all elements not in S. To make this meaningful, we need to know what the universal set U of all possible elements is. 
    - If U is specified, then
@@ -27,11 +27,9 @@ integers 0, 1, 2 is shown as
 
 
 ## A Universal Turing Machine
+
 ### infinite set: countable and uncountable sets
 - Some sets are finite, but most of the interesting sets (and languages) are infinite.
-
-
-
 
 ### countable sets
 
@@ -58,13 +56,14 @@ integers 0, 1, 2 is shown as
 - Here the element occurs in the seventh place, and every element has some position in the sequence.
 - The set is therefore countable.
 
-- We see from this example that we can prove that a set is countable if we can produce a method by which its elements can be written in some sequence. 
-- We call such a method an enumeration procedure. 
+- We see from this example that we can prove that a set is countable if we can produce a method by which its elements can be written **in some sequence.** 
+- We call such a method an **enumeration procedure.** 
 - Since an enumeration procedure is some kind of mechanical process, we can use a Turing machine model to define it formally.
 - Not every set is countable. 
 - As we will see in the next chapter, there are some uncountable sets.
-
+- 
+#### enumeration procedure exists(not algorithm) -> countable
 - But any set for which an enumeration procedure exists is countable because the enumeration gives the required sequence.
-- Strictly speaking, an enumeration procedure cannot be called an algorithm since it will not terminate when S is infinite. 
+- Strictly speaking, **an enumeration procedure cannot be called an algorithm since it will not terminate when S is infinite.** 
 - Nevertheless, it can be considered a meaningful process, because it produces well-defined and predictable results.
 
