@@ -1,11 +1,30 @@
 # Computer-language-theory
 
+## Sets
+- A set is a collection of elements, without any structure other than membership. 
+- To indicate that x is an element of the set S, we write x ∈ S. 
+- The statement that x is not in S is written x ∉ S. 
+- A set can be specified by enclosing some description of its elements in curly braces; for example, the set of
+integers 0, 1, 2 is shown as 
+  - S ={0, 1, 2}
+
+### The usual set operations
+1. union (∪): S1 ∪ S2 = {x: x ∈ S1 or x ∈ S2}
+2. intersection (∩): S1 ∩ S2 = {x: x ∈ S1 and x ∈ S2} 
+3. and difference (−): S1 − S2 = {x: x ∈ S1 and x ∉ S2}
+4. complementation: 
+   - The complement of a set S, denoted by consists of all elements not in S. To make this meaningful, we need to know what the universal set U of all possible elements is. 
+   - If U is specified, then
+     - S' = {x: x ∈ U, x ∉ S} 
+
+
+
 ## A Universal Turing Machine
-
-### comple
-
 ### infinite set: countable and uncountable sets
 - Some sets are finite, but most of the interesting sets (and languages) are infinite.
+
+
+
 
 ### countable sets
 
