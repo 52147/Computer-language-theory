@@ -20,7 +20,8 @@ integers 0, 1, 2 is shown as
 2. intersection (∩): S1 ∩ S2 = {x: x ∈ S1 and x ∈ S2} 
 3. difference (−): S1 − S2 = {x: x ∈ S1 and x ∉ S2}
 4. complementation: 
-   - The complement of a set S, denoted by consists of all elements not in S. To make this meaningful, we need to know what the universal set U of all possible elements is. 
+   - The complement of a set S, denoted by consists of all elements not in S. 
+   - To make this meaningful, we need to know what the universal set U of all possible elements is. 
    - If U is specified, then
      - S' = {x: x ∈ U, x ∉ S} 
 
@@ -66,4 +67,20 @@ integers 0, 1, 2 is shown as
 - But any set for which an enumeration procedure exists is countable because the enumeration gives the required sequence.
 - Strictly speaking, **an enumeration procedure cannot be called an algorithm since it will not terminate when S is infinite.** 
 - Nevertheless, it can be considered a meaningful process, because it produces well-defined and predictable results.
+
+### 5.3 Context-Free grammars and programming languages
+- One of the most important uses of the theory of formal languages is in the definition of programming languages and
+- in the construction of interpreters and compilers for them.
+- The basic problem here is to define a programming language precisely and to use this definition as the starting point for the writing of efficient and reliable translation programs.
+- Both regular and context-free language are important in achieving this.
+-  regular language & context-free language:
+     - regular languages are used in the recognition of certain simple patterns that occur in programmong languages,
+     - but as we need context-free languages to model more complicated aspects. 
+- 
+
+## Chapter 7 Pushdown Automata
+
+- The description of context-freee languages by means of context-free grammars is convenient, 
+- as illustrated by the use of BNF in programming language definition.
+
 
