@@ -68,6 +68,18 @@ integers 0, 1, 2 is shown as
 - Strictly speaking, **an enumeration procedure cannot be called an algorithm since it will not terminate when S is infinite.** 
 - Nevertheless, it can be considered a meaningful process, because it produces well-defined and predictable results.
 
+## Chapter 2 Finite Automata
+
+### 5.2 Parsing and Ambiguity
+- We have so far concentrated on the generative aspects of grammars.
+- Given a grammar G, we studied the set of strings that can be derived using G.
+
+- In cases of practical applications, we are also concerned with the analytical side of the grammar:
+  - Given a string w of terminals, we want to know whether or not w is in L(G).
+  - If so, we may want to find a derivation of w.
+  - An algorithm that can tell us whether w is in L(G) is a membership algorithm.
+  - The term parsing describes finding a sequence of profuctions by which a w ∈ L(G) is derived.  
+
 ### 5.3 Context-Free grammars and programming languages
 - One of the most important uses of the theory of formal languages is in the definition of programming languages and
 - in the construction of interpreters and compilers for them.
@@ -76,7 +88,15 @@ integers 0, 1, 2 is shown as
 -  regular language & context-free language:
      - regular languages are used in the recognition of certain simple patterns that occur in programmong languages,
      - but as we need context-free languages to model more complicated aspects. 
-- 
+
+
+### BNF (Backnus-Naur form)
+- As with most other languates, we can define a programming language by a grammar.
+- It is traditional in writing on programming languages to use a convention for specifying grammars called the Backus-Naur form or BNF.
+-  This form is essence the same as the notation we have used here, but the appearance is different.
+-  In BNF, variables are enclosed in triangular brackets.
+-  Terminal symbols are written without any special marking.
+-  BNF also uses subsidiary symbols such as | , much in the way we have done.
 
 ## Chapter 7 Pushdown Automata
 
