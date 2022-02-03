@@ -93,7 +93,11 @@ integers 0, 1, 2 is shown as
   - then the concatenation of w and c, denoted by wv, is
   - wv = a1a2...anb1b2...bm
 #### reverse
-- The reverse of a string is obtained by
+- The reverse of a string is obtained by writing the symbols in reverse oeder; if w is a string as shown above, then its reverse w^R is
+  - w^R = an ... a2a1
+### length
+- The length of a string w, denoted by |w|, is the number of symboles in the string.
+- We will frequently need to refer to the empty string, which is a 
 
 
 ## Chapter 2 Finite Automata
