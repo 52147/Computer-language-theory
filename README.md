@@ -95,7 +95,7 @@ integers 0, 1, 2 is shown as
 #### reverse
 - The reverse of a string is obtained by writing the symbols in reverse oeder; if w is a string as shown above, then its reverse w^R is
   - w^R = an ... a2a1
-### length
+#### length
 - The length of a string w, denoted by |w|, is the number of symboles in the string.
 - We will frequently need to refer to the empty string, which is a string with no symbols at all.
 - It will be denoteed by λ.
@@ -103,20 +103,40 @@ integers 0, 1, 2 is shown as
   - |λ| = 0  empty string
   - λw = wλ = w
 
-### substring
+#### substring
 - Any string of consecutive symbols in some w is said to be a substring of w.
 - If 
   - w = vu,
   - then the substrings v and u are said to be a prefix and a sufix of w, respecitvely.
     - For example, if w = abbab, then {λ, a, ab, abb, abba, abba, abbab} is the set of all prefixes of w, while bab, ab, b are some of suffixes.
 
-### the sum of 2 strings concatenation = the sume of 2 strings lengths
+#### the sum of 2 strings concatenation = the sume of 2 strings lengths
 - Simple properties of string, such as their length, are very intuitive and probably need little elaboration.
   - For example, if u and v are strings, 
   - then the length of their concatenation is the sum of the individual lengths, that is,
     - |uv| = |u| + |v|
     - But although this relationship is obvious, it is useful to be able to make it precise and prove it.
     - The technuques for doing so are important in more complicated situations.  
+
+
+#### Example 1.8
+
+- Show that |uv| = |u| + |v| holds for any u and v.
+- To prove this, we first need a definition of the length of a string.
+- We make such a definition in a recursive fashion by
+  - |a| = 1
+  - |wa| = |w| + 1 
+
+### 2. Grammar
+
+Definition 1.1 V T S P
+- A grammar G is defined as a quadruple
+  - G = (V, T, S, P)
+  - 1. V: v is a finite set of objects called variables.
+  - 2. T: T is a finite set of objects called terminal symobls.
+  - 3. S: S ∈ V is a special symbol called the start variable.
+  - 4. P: P is a finite set of productions.  
+  - the sets V and T are nonempty and disjoint
 
 
 ## Chapter 2 Finite Automata
