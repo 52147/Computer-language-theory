@@ -129,7 +129,24 @@ integers 0, 1, 2 is shown as
 
 ### 2. Grammar
 
-Definition 1.1 V T S P
+- A grammar for the English language tells us whether a particular sentence is well-formed or not.
+- A typical rule of English grammar is "a sentence can consist of a noun phrase followed by a predicate."
+  - 〈sentence〉 -> 〈noun_pharse〉〈predicate〉
+- This is not enough to deal with actual sentences.
+- We must now provide definitions for the newly introduced constructs (noun_pharse) and (predicate).
+  - If we do so by
+    -  〈noun_pharse〉 -> 〈article〉〈noun〉,
+    -  〈predicate〉->〈verb〉
+    -  and if we associate the actual words "a" and "the" with 〈article〉, "boy" and "dog" with 〈noun〉,
+    -  and "run" and "walks" with 〈verb〉,
+    -  then the grammar tells us that the sentences "a boy runs" and "the dog walks" are properly formed.
+    -  If we were to give a complete grammar, then in theory, every proper sentence could be explained this way.
+ - This exmple illustrates the definition of a general concept in terms of simple ones.
+ - We start with the top-level concept, here 〈sentence〉,
+ - and successively reduce it to the irreducuble building blocks of the language.
+ - Th  
+
+#### Definition 1.1: V T S P
 - A grammar G is defined as a quadruple
   - G = (V, T, S, P)
   - 1. V: v is a finite set of objects called variables.
@@ -137,6 +154,8 @@ Definition 1.1 V T S P
   - 3. S: S ∈ V is a special symbol called the start variable.
   - 4. P: P is a finite set of productions.  
   - the sets V and T are nonempty and disjoint
+
+
 
 
 ## Chapter 2 Finite Automata
