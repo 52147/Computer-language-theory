@@ -144,7 +144,7 @@ integers 0, 1, 2 is shown as
  - This exmple illustrates the definition of a general concept in terms of simple ones.
  - We start with the top-level concept, here 〈sentence〉,
  - and successively reduce it to the irreducuble building blocks of the language.
- - Th  
+ - The generalization of these ideas leads us to formal grammars.  
 
 #### Definition 1.1: V T S P
 - A grammar G is defined as a quadruple
