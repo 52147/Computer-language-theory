@@ -68,7 +68,36 @@ integers 0, 1, 2 is shown as
 - Strictly speaking, **an enumeration procedure cannot be called an algorithm since it will not terminate when S is infinite.** 
 - Nevertheless, it can be considered a meaningful process, because it produces well-defined and predictable results.
 
+## 1.2  languages, grammars, automata
+- Three fundamental ideas are the major themes of this book:
+- 1. languages
+- 2. grammars
+- 3. automata
+- In the course of our study we will explore many results about these concepts and about their relationship to each other.
+- First, we must understan the meaning of the terms.
+
+### 1. Languages
+- We start with a finite, noneempty set ∑ of symbols, called the alphat.
+- From the individual symbols we construct strings, which are finite sequences of symbols from the alphabet.
+  - For example, if the alphabet  ∑ = {a, b}, then abab and aaabbba are strings on ∑.
+  - With few exceptions, we will use lowercase letters a, b, c,...for elements of ∑ and u, v, w,...for string names.
+  - We will write, for example,
+    - w = abaaa
+    - to indicate that the string named w has the specific value abaaa.
+
+### concatenation
+- The concatenation of two stings w and v is the string obtained by appending the symbols of v to the right end of w, that is, if
+  - w = a1a2...an
+  - and
+  - v = b1b2...bm
+  - then the concatenation of w and c, denoted by wv, is
+  - wv = a1a2...anb1b2...bm
+### reverse
+- The reverse of a string is obtained by
+
+
 ## Chapter 2 Finite Automata
+- 
 
 ### 5.2 Parsing and Ambiguity
 - We have so far concentrated on the generative aspects of grammars.
