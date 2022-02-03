@@ -97,7 +97,26 @@ integers 0, 1, 2 is shown as
   - w^R = an ... a2a1
 ### length
 - The length of a string w, denoted by |w|, is the number of symboles in the string.
-- We will frequently need to refer to the empty string, which is a 
+- We will frequently need to refer to the empty string, which is a string with no symbols at all.
+- It will be denoteed by λ.
+- The following simple relations
+  - |λ| = 0  empty string
+  - λw = wλ = w
+
+### substring
+- Any string of consecutive symbols in some w is said to be a substring of w.
+- If 
+  - w = vu,
+  - then the substrings v and u are said to be a prefix and a sufix of w, respecitvely.
+    - For example, if w = abbab, then {λ, a, ab, abb, abba, abba, abbab} is the set of all prefixes of w, while bab, ab, b are some of suffixes.
+
+### the sum of 2 strings concatenation = the sume of 2 strings lengths
+- Simple properties of string, such as their length, are very intuitive and probably need little elaboration.
+  - For example, if u and v are strings, 
+  - then the length of their concatenation is the sum of the individual lengths, that is,
+    - |uv| = |u| + |v|
+    - But although this relationship is obvious, it is useful to be able to make it precise and prove it.
+    - The technuques for doing so are important in more complicated situations.  
 
 
 ## Chapter 2 Finite Automata
