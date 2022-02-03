@@ -129,6 +129,8 @@ integers 0, 1, 2 is shown as
 
 ### 2. Grammar
 
+#### concept of the formal grammars
+
 - A grammar for the English language tells us whether a particular sentence is well-formed or not.
 - A typical rule of English grammar is "a sentence can consist of a noun phrase followed by a predicate."
   - 〈sentence〉 -> 〈noun_pharse〉〈predicate〉
