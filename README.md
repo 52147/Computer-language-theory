@@ -158,6 +158,22 @@ integers 0, 1, 2 is shown as
   - the sets V and T are nonempty and disjoint
 
 
+#### profuction rule
+
+- The production rules are the heart of a grammar;
+- they specify how the grammar transforms one string into another, and through this they define a language associated with the grammar.
+- In our discussion we will assume that all production rules are of the form
+  - x -> y
+  - where x is an element of  (V ∪ T)^+  and y is in (V ∪ T)^*.
+  - The productions are applied in the following manner:
+    - Given a string w of the form
+      - w = uxv,
+      - we say the production x -> y is applicable to this string, and we may use it to replace x with y therby obtaining a new string
+      - z = uyv
+      - This is written as
+      - w  
+
+
 
 
 ## Chapter 2 Finite Automata
