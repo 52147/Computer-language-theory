@@ -211,8 +211,8 @@ integers 0, 1, 2 is shown as
   - The transitions from one internal state to another are governed by the transition function δ.
     - for exmaple, if
     - δ(q0, a) = q1
-    -    
-   
+    - then if the dfa is in state q0 and the current input symbol is a, the dfa will go into state q1.   
+#### transition graphs   
  
 
 
