@@ -199,6 +199,20 @@ integers 0, 1, 2 is shown as
   - δ : Q × Σ → Q is total function called the transition function
   - q0 ∈ Q is the initial state
   - F ⊆ Q is the a set of final states.
+#### dfa operation process
+- A deterministic finite accepter (dfa) operates in the following manner:
+
+  - At the initial time, it is assumed to be in the initial state q0, with its input mechanism on the leftmost symbol of the input string.
+  - During each move of the automation, the input mechanism advances one position to the right, so each move consumes one input symbol.
+  - When the end of the string is reached, the string is accepted if the automation is in one of its final states.
+  - Otherwise the string is rejected.
+  
+  - The input mechanism can move only from left to right and reads exactly one symbol on each step.
+  - The transitions from one internal state to another are governed by the transition function δ.
+    - for exmaple, if
+    - δ(q0, a) = q1
+    -    
+   
  
 
 
