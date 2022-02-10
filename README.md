@@ -177,7 +177,30 @@ integers 0, 1, 2 is shown as
 
 
 ## Chapter 2 Finite Automata
-- 
+
+### Finite accepter
+- This type of automation is characterized by having no temporary storage.
+- Since an input file can not be written, a finite automation is severly limited in its capacity to "remeber" things during the computation.
+- A finite amount of informtion can be retained in the control unit by placing the unit into a specifice state.
+
+- But since the number of such states is finite, a finite automation can only deal with situations in which the information to be stored at any time is strictly bounded.
+
+### 2.1 Determinstic Finite Accepter
+
+#### Deterministic Accepters and Transition Graphs
+- a deterministic accepter has internal states, rules for transitions from ont state to another, some input, and ways of making decisions.
+
+#### definition of deterministic finite accepter (dfa)
+- A deterministic finite accepter or dfa is defined by the quintuple
+  - M = (Q,Σ,δ,q0,F)
+  - where 
+  - Q is a finite set of internal states,
+  - Σ is a finite set of symbols called the input alphabet
+  - δ : Q × Σ → Q is total function called the transition function
+  - q0 ∈ Q is the initial state
+  - F ⊆ Q is the a set of final states.
+ 
+
 
 ### 5.2 Parsing and Ambiguity
 - We have so far concentrated on the generative aspects of grammars.
