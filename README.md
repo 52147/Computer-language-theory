@@ -213,8 +213,28 @@ integers 0, 1, 2 is shown as
     - δ(q0, a) = q1
     - then if the dfa is in state q0 and the current input symbol is a, the dfa will go into state q1.   
 #### transition graphs   
- 
 
+## Chapter 3 Regular languages and regular grammars
+
+### 3.1 Regular expressions
+- a language is regulare if there exists a finite accepter for it.
+- therefore, every regular language can be described by some dfa or some nfa.
+#### formal definition of regular expression
+- We construct regular expressions from primitive constituents by repeatedly applying certain recursive rules.
+- This is similar to the way we construct familar arithmetic expressions.
+- Let Σ be a given alphabet.
+- Then
+- 1. Ø,λ and a ∈ Σ are all regular expressions. These are called primitive regular expressions.
+- 2. If r1 and r2 are regular expressions, so are r1 + r2, r1.r2, r1* and (r1)
+- 3. A string is a regulare expression if and only if it can be derived from the primitive regular expressions by a finite number of applications of the rules in (2).
+ 
+- For Σ = {a,b,c}, the string
+ 
+  - (a+b+c)* .(c+Ø)
+  - is a regular expression, since it is constructed by application of the above rules.
+    - For examplem if we take r1 = c and r2 = Ø, we find that c + Ø and (c + Ø) are also regular expressions.
+    - Repeating this, we eventually generate the whole string.
+    - On the other hand, (a + b +) is not a regulare expression, since there is no way it can be constructed from the primitive regular expressions.
 
 ### 5.2 Parsing and Ambiguity
 - We have so far concentrated on the generative aspects of grammars.
