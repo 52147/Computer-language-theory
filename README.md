@@ -227,7 +227,8 @@ integers 0, 1, 2 is shown as
 - 1. Ø,λ and a ∈ Σ are all regular expressions. These are called primitive regular expressions.
 - 2. If r1 and r2 are regular expressions, so are r1 + r2, r1.r2, r1* and (r1)
 - 3. A string is a regulare expression if and only if it can be derived from the primitive regular expressions by a finite number of applications of the rules in (2).
- 
+
+#### example
 - For Σ = {a,b,c}, the string
  
   - (a+b+c)* .(c+Ø)
@@ -235,6 +236,31 @@ integers 0, 1, 2 is shown as
     - For examplem if we take r1 = c and r2 = Ø, we find that c + Ø and (c + Ø) are also regular expressions.
     - Repeating this, we eventually generate the whole string.
     - On the other hand, (a + b +) is not a regulare expression, since there is no way it can be constructed from the primitive regular expressions.
+#### Languages associated with regular expressions
+- Regular expressions can be used to describe some simple languages.
+- If r is a regular expression, we will let L(r) denote the language associated with r.
+- The language L(r) denoted by any regular expressions r is defined by the following rules.
+- 1. Ø is a regular expression denoting the empty set,
+- 2. λ is a regular expression denoting {λ}
+- 3. For every a ∈ Σ, a is a regular expression denoting {a}
+
+- If r1 and r2 are regular expressions, then
+- 4. L(r1 + r2) = L(r1) ∪ L(r2)
+- 5. L(r1 * r2) = L(r1) U L(r2)
+- 6. L((r1)) = L(r1)
+- 7. L(r1*) = (L(r1))*
+- The last four rules of this definition are used to reduce L(r) to simpler components recursively;
+- the first three are the termination conditions for this recursion.
+- To see what language a given expresssion denotes, we apply these rules repeatedly.
+
+#### example
+- Exhibit the language L(a* . (a+b)) in set notation.
+
+  - L(a* . (a + b)) 
+  - = L(a*) L(a+b)
+  - = (L(a))* (L(a) ∪ L(b))
+  - = {λ, a, aa, aaa, ...} {a, b}
+  - = {a, aa, aaa, ..., b, ab, aab, ...}                
 
 ### 5.2 Parsing and Ambiguity
 - We have so far concentrated on the generative aspects of grammars.
