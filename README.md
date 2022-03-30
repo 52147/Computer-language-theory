@@ -262,6 +262,24 @@ integers 0, 1, 2 is shown as
   - = {λ, a, aa, aaa, ...} {a, b}
   - = {a, aa, aaa, ..., b, ab, aab, ...}                
 
+### chapter 5 context free language
+- If in L = {a^nb^n: n >= 0}
+- we substitute a left parenth for a and a right parenthesis for b, then parentheses string such as (()) and ((())) are in L, but (() is not.
+- parsing: 
+  - explaining a sentence through its grammatical derivation is called parsing.
+  - parsing is a way of describing sentence structure.
+  - It is important whenever we need to understand the meaning of a sentence, as we do for instance in translating from one language to another.
+  - In computer science, this is relevant in interpreters, compilers, and other translating programs.
+
+### 5.1 context free grammars
+- regular grammar :
+  - 1. the left side must be single variable,
+  - 2. the right side has a special form
+- context free grammar:
+  - permitting anything on the right
+
+ 
+
 ### 5.2 Parsing and Ambiguity
 - We have so far concentrated on the generative aspects of grammars.
 - Given a grammar G, we studied the set of strings that can be derived using G.
@@ -285,7 +303,7 @@ integers 0, 1, 2 is shown as
 ### BNF (Backnus-Naur form)
 - As with most other languates, we can define a programming language by a grammar.
 - It is traditional in writing on programming languages to use a convention for specifying grammars called the Backus-Naur form or BNF.
--  This form is essence the same as the notation we have used here, but the appearance is different.
+-  This form is essence the same as the notation we have used here, but the appearance is different.#
 -  In BNF, variables are enclosed in triangular brackets.
 -  Terminal symbols are written without any special marking.
 -  BNF also uses subsidiary symbols such as | , much in the way we have done.
@@ -295,4 +313,4 @@ integers 0, 1, 2 is shown as
 - The description of context-freee languages by means of context-free grammars is convenient, 
 - as illustrated by the use of BNF in programming language definition.
 
-
+#
